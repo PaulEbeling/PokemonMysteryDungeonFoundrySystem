@@ -1,21 +1,25 @@
 {
-  "name": "worldbuilding",
-  "version": "1.0.0",
-  "description": "CSS compiler for the Worldbuilding system",
+  "name": "boilerplate",
+  "version": "2.1.0",
+  "description": "CSS compiler for the Boilerplate system",
   "scripts": {
-    "css": "gulp css",
-    "watch": "gulp",
-    "gulp": "gulp"
+    "build": "sass src/scss/boilerplate.scss css/boilerplate.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/boilerplate.scss css/boilerplate.css --style=expanded --source-map --watch",
+    "generate": "node src/generate-boilerplate-system.mjs"
   },
   "browserslist": [
     "last 3 versions"
   ],
-  "author": "",
+  "author": "Asacolips",
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-less": "^4.0.1"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.15",
+    "renamer": "^5.0.0",
+    "replace": "^1.2.2",
+    "sass": "^1.93.2",
+    "typescript": "^5.9.3",
+    "fvtt-types": "13.346.0-beta.20250812191140"
+  }
 }

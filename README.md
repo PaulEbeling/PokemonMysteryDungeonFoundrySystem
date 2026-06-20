@@ -1,7 +1,11 @@
-<<<<<<< HEAD
-# Simple Worldbuilding System
+# Boilerplate System
 
-A simple game system for Foundry VTT which allows for flexible definition of Actors and Items to assist with worldbuilding or for running games which do not have a more complete system implementation available.
-=======
-# PokemonMysteryDungeonFoundrySystem
->>>>>>> 0766f22d4719526f52e4660d12ede3ab2d3ed6d0
+![Foundry v14](https://img.shields.io/badge/foundry-v14-green)
+
+## Unofficial
+
+Please note that this is an unofficial fork of the Foundry boilerplate system found [here](https://github.com/asacolips-projects/boilerplate). I am not affiliated with Foundry in any way. This was created for my own use and is only provided as a convenience in case it might be of use to anyone. Use at your own risk.
+
+Refer to official boilerplate for usage instructions. Python build may not (probably doesn't) work.
+
+See Changelog for important changes.
