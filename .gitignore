@@ -1,15 +1,4 @@
-# IDE
-.idea/
-.vs/
-
-# Node Modules
-node_modules/
-npm-debug.log
-
-# Foundry
-*.lock
-jsconfig.json
+node_modules
+universal-tabletop-system.lock
+foundry-config.yaml
 foundry
-
-# Boilerplate
-build/

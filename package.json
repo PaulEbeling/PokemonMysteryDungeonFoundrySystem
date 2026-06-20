@@ -1,25 +1,36 @@
 {
-  "name": "boilerplate",
-  "version": "2.1.0",
-  "description": "CSS compiler for the Boilerplate system",
+  "name": "universal-tabletop-system",
+  "version": "1.0.0",
+  "description": "Universal Tabletop System",
+  "main": "index.js",
   "scripts": {
-    "build": "sass src/scss/boilerplate.scss css/boilerplate.css --style=expanded --no-source-map",
-    "watch": "sass src/scss/boilerplate.scss css/boilerplate.css --style=expanded --source-map --watch",
-    "generate": "node src/generate-boilerplate-system.mjs"
+    "build": "rollup -c",
+    "createSymlinks": "node ./tools/create-symlinks.mjs",
+    "postinstall": "npm run createSymlinks",
+    "lint": "eslint uts.mjs src/module/**/* templates/**/*",
+    "lint:fix": "eslint --fix uts.mjs src/module/**/* templates/**/*"
   },
-  "browserslist": [
-    "last 3 versions"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MetaMorphic-Digital/universal-tabletop-system.git"
+  },
+  "keywords": [
+    "fvtt",
+    "system"
   ],
-  "author": "Asacolips",
-  "license": "MIT",
-  "private": true,
+  "author": "MetaMorphic Digital",
+  "bugs": {
+    "url": "https://github.com/MetaMorphic-Digital/universal-tabletop-system/issues"
+  },
+  "homepage": "https://github.com/MetaMorphic-Digital/universal-tabletop-system#readme",
   "devDependencies": {
-    "glob": "^10.3.10",
-    "inquirer": "^9.2.15",
-    "renamer": "^5.0.0",
-    "replace": "^1.2.2",
-    "sass": "^1.93.2",
-    "typescript": "^5.9.3",
-    "fvtt-types": "13.346.0-beta.20250812191140"
+    "@eslint/js": "^9.27.0",
+    "@html-eslint/eslint-plugin": "^0.26.0",
+    "@html-eslint/parser": "^0.26.0",
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-jsdoc": "^51.4.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.1"
   }
 }

@@ -1,11 +1,12 @@
-# Boilerplate System
+# Universal Tabletop System
 
-![Foundry v14](https://img.shields.io/badge/foundry-v14-green)
+The Universal Tabletop System for FoundryVTT, by Metamorphic Digital.
 
-## Unofficial
+## System Features
 
-Please note that this is an unofficial fork of the Foundry boilerplate system found [here](https://github.com/asacolips-projects/boilerplate). I am not affiliated with Foundry in any way. This was created for my own use and is only provided as a convenience in case it might be of use to anyone. Use at your own risk.
+This bare-bones system provides a stable platform for module developers to add their own functionality by registering data models and other functionality without needing to build an entire system.
 
-Refer to official boilerplate for usage instructions. Python build may not (probably doesn't) work.
-
-See Changelog for important changes.
+Benefits include
+- Actor and Item sheets that automatically display properties based on the data models
+- A combat tracker that supports assigning initiative to players, not just actors
+- Expanded range of hooks
