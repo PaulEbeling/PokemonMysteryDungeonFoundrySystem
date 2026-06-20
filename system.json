@@ -11,6 +11,16 @@
       "url": "https://foundryvtt.com"
     }
   ],
+  "documentTypes":{
+    "Actor": {
+
+        "character": {
+          "htmlFields": [
+            "biography",
+            "notes"
+          ]
+        }
+  },
   "esmodules": ["module/simple.js"],
   "styles": ["styles/simple.css"],
   "packs": [],
@@ -27,8 +37,8 @@
     }
   ],
   "compatibility": {
-    "minimum": "10",
-    "verified": "11"
+    "minimum": "13",
+    "verified": "13"
   },
   "grid": {
     "distance": 5,
